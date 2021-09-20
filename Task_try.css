@@ -1,0 +1,657 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: rgba(247, 246, 246, 0.466);
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container {
+    padding: 10px;
+    padding-left: 50px;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 15px;
+}
+
+
+/* Avatar */
+
+.Card {
+    width: 300px;
+    height: 460px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Avatar_logo {
+    width: 100px;
+    height: 100px;
+}
+
+.Avatar {
+    width: 200px;
+    height: 190px;
+    border: 6px solid blue;
+}
+
+.Form_div {
+    padding: 30px;
+}
+
+.fa {
+    color: blue;
+    background-color: #fff;
+    border: 2px solid blue;
+    padding: 6px;
+    border-radius: 5px;
+    margin-top: -10px;
+}
+
+.fa:hover {
+    color: #fff;
+    background-color: blue;
+}
+
+.Form_button {
+    color: #fff;
+    background: #000;
+    width: 68%;
+    padding: 8px;
+    border: none;
+    margin-top: 30px;
+    margin-left: 48px;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+.Form_button:hover {
+    color: #fff;
+    background: rgba(27, 27, 29, 0.986);
+}
+
+
+/* Avatar */
+
+
+/* Color_flip */
+
+.Color_flip {
+    width: 780px;
+    height: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    padding: 20px;
+}
+
+.pick-1 {
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.pick-1:hover {
+    animation: mymove 5s;
+}
+
+.blue {
+    border: none;
+    background: blue;
+    color: #fff;
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.pick-2 {
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.pick-2:hover {
+    animation: mymove 5s;
+}
+
+.yellow {
+    border: none;
+    background: yellow;
+    color: #fff;
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.pick-3 {
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    background: yellow;
+    margin-left: 10px;
+}
+
+.pick-3:hover {
+    animation: mymove 5s;
+}
+
+.red {
+    border: none;
+    background: red;
+    color: #fff;
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.pick-4 {
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.pick-4:hover {
+    animation: mymove 5s;
+}
+
+.green {
+    border: none;
+    background: green;
+    color: #fff;
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+@keyframes mymove {
+    50% {
+        transform: rotate(180deg);
+    }
+}
+
+.color {
+    margin-top: 5px;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: #fff;
+    background: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 380%;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.color:hover {
+    color: #fff;
+    background: rgb(49, 48, 58);
+}
+
+
+/* Color_flip */
+
+
+/* Modal */
+
+.bg-modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-content {
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.new_img {
+    width: 54%;
+    height: 44%;
+}
+
+.New_icons {
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    font-weight: bold;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+
+/* Modal */
+
+@media screen and (max-width:1000px) {
+    .Container {
+        grid-gap: 100px;
+        padding-left: 100px;
+        padding-top: 10px;
+    }
+    .Card {
+        width: 350px;
+        height: 550px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        align-items: center;
+    }
+    .Avatar {
+        width: 250px;
+        height: 250px;
+    }
+    .Form_div {
+        align-items: center;
+        padding: 30px;
+    }
+    .Form_button {
+        color: #fff;
+        background: #000;
+        width: 68%;
+        padding: 8px;
+        border: none;
+        margin-top: 30px;
+        margin-left: 54px;
+        font-size: 17px;
+        font-weight: 200;
+    }
+    .fa {
+        padding: 10px;
+    }
+    .Color_flip {
+        width: 320px;
+        height: 470px;
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .pick-1 {
+        width: 120px;
+        height: 120px;
+    }
+    .blue {
+        width: 120px;
+    }
+    .pick-2 {
+        width: 120px;
+        height: 120px;
+        margin-left: 20px;
+    }
+    .yellow {
+        width: 120px;
+        margin-left: 20px;
+    }
+    .pick-3 {
+        width: 120px;
+        height: 120px;
+        margin-left: 20px;
+    }
+    .red {
+        width: 120px;
+        margin-left: 20px;
+    }
+    .pick-4 {
+        width: 120px;
+        height: 120px;
+        margin-left: 20px;
+    }
+    .green {
+        width: 120px;
+        margin-left: 20px;
+    }
+    .color {
+        width: 180%;
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    /* Modal */
+    .bg-modal {
+        position: absolute;
+        width: 100%;
+        height: 200vh;
+        background: rgba(0, 0, 0, 0.7);
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+    .modal-content {
+        width: 300px;
+        height: 460px;
+        background: #fff;
+        border-radius: 4px;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+    }
+    .new_img {
+        width: 54%;
+        height: 44%;
+        margin-top: -50px;
+    }
+    .New_icons {
+        text-align: center;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .close {
+        position: absolute;
+        top: 0;
+        right: 14px;
+        font-size: 42px;
+        font-weight: bold;
+        transform: rotate(45deg);
+        cursor: pointer;
+    }
+}
+
+
+/* Modal */
+
+@media screen and (max-width: 768px) {
+    .Container {
+        grid-gap: 70px;
+        padding-left: 70px;
+    }
+    .Card {
+        width: 370px;
+        height: 580px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        align-items: center;
+    }
+    .Avatar {
+        width: 280px;
+        height: 270px;
+    }
+    .Form_div {
+        align-items: center;
+        padding: 30px;
+    }
+    .Form_button {
+        color: #fff;
+        background: #000;
+        width: 68%;
+        padding: 8px;
+        border: none;
+        margin-top: 30px;
+        margin-left: 56px;
+        font-size: 17px;
+        font-weight: 200;
+    }
+    .This_logo {
+        width: 100px;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fa {
+        padding: 10px;
+    }
+    .Color_flip {
+        width: 170px;
+        height: 800px;
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .pick-1 {
+        width: 120px;
+        height: 120px;
+    }
+    .blue {
+        width: 120px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .pick-2 {
+        width: 120px;
+        height: 120px;
+        margin-left: 20px;
+    }
+    .yellow {
+        width: 120px;
+        margin-left: 20px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .pick-3 {
+        width: 120px;
+        height: 120px;
+        margin-left: 20px;
+    }
+    .red {
+        width: 120px;
+        margin-left: 20px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .pick-4 {
+        width: 120px;
+        height: 120px;
+        margin-left: 20px;
+    }
+    .green {
+        width: 120px;
+        margin-left: 20px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .color {
+        width: 74%;
+        margin-top: 5px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    /* Modal */
+    .bg-modal {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+    .modal-content {
+        width: 300px;
+        height: 400px;
+        background: #fff;
+        border-radius: 4px;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+    }
+    .new_img {
+        width: 54%;
+        height: 44%;
+    }
+    .New_icons {
+        text-align: center;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .close {
+        position: absolute;
+        top: 0;
+        right: 14px;
+        font-size: 42px;
+        font-weight: bold;
+        transform: rotate(45deg);
+        cursor: pointer;
+    }
+    /* Modal */
+    @media screen and (max-width:1000px) {
+        .Container {
+            grid-gap: 100px;
+            padding-left: 100px;
+            padding-top: 10px;
+        }
+        .Card {
+            width: 350px;
+            height: 550px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            align-items: center;
+        }
+        .Avatar {
+            width: 250px;
+            height: 250px;
+        }
+        .Form_div {
+            align-items: center;
+            padding: 30px;
+        }
+        .Form_button {
+            color: #fff;
+            background: #000;
+            width: 68%;
+            padding: 8px;
+            border: none;
+            margin-top: 30px;
+            margin-left: 54px;
+            font-size: 17px;
+            font-weight: 200;
+        }
+        .fa {
+            padding: 10px;
+        }
+        .Color_flip {
+            width: 320px;
+            height: 470px;
+            padding-top: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .pick-1 {
+            width: 120px;
+            height: 120px;
+        }
+        .blue {
+            width: 120px;
+        }
+        .pick-2 {
+            width: 120px;
+            height: 120px;
+            margin-left: 20px;
+        }
+        .yellow {
+            width: 120px;
+            margin-left: 20px;
+        }
+        .pick-3 {
+            width: 120px;
+            height: 120px;
+            margin-left: 20px;
+        }
+        .red {
+            width: 120px;
+            margin-left: 20px;
+        }
+        .pick-4 {
+            width: 120px;
+            height: 120px;
+            margin-left: 20px;
+        }
+        .green {
+            width: 120px;
+            margin-left: 20px;
+        }
+        .color {
+            width: 180%;
+            margin-top: 5px;
+            font-size: 20px;
+        }
+        /* Modal */
+        .bg-modal {
+            position: absolute;
+            width: 100%;
+            height: 200vh;
+            background: rgba(0, 0, 0, 0.7);
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+        .modal-content {
+            width: 300px;
+            height: 460px;
+            background: #fff;
+            border-radius: 4px;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+        }
+        .new_img {
+            width: 54%;
+            height: 44%;
+            margin-top: -50px;
+        }
+        .New_icons {
+            text-align: center;
+            margin-top: 30px;
+            width: 100%;
+        }
+        .close {
+            position: absolute;
+            top: 0;
+            right: 14px;
+            font-size: 42px;
+            font-weight: bold;
+            transform: rotate(45deg);
+            cursor: pointer;
+        }
+    }
+    /* Modal */
+}
+
+input.hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+#profile-image {
+    cursor: pointer;
+    background: #8adffb;
+}
